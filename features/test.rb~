@@ -1,0 +1,12 @@
+Given(/^The user has visited amazon$/) do
+  visit "http://www.amazon.com"
+end
+
+When(/^they click on a button$/) do
+  pending # express the regexp above with the code you wish you had
+end
+
+Then(/^verify the page changes$/) do
+  pending # express the regexp above with the code you wish you had
+end
+

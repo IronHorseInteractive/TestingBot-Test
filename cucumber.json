@@ -1,0 +1,59 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "verify capybara and cucumber are working",
+    "line": 1,
+    "description": "",
+    "id": "verify-capybara-and-cucumber-are-working",
+    "uri": "features/test.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "name": "just visit a site and conduct basic tests",
+        "line": 3,
+        "description": "",
+        "id": "verify-capybara-and-cucumber-are-working;just-visit-a-site-and-conduct-basic-tests",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "The user has visited amazon",
+            "line": 5,
+            "match": {
+              "location": "features/test.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26268991361
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "they click on a button",
+            "line": 6,
+            "match": {
+              "location": "features/test.rb:5"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Unable to find css \".cheese\" (Capybara::ElementNotFound)\n./features/test.rb:6:in `/^they click on a button$/'\nfeatures/test.feature:6:in `When they click on a button'",
+              "duration": 20002370861
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "verify the page changes",
+            "line": 7,
+            "match": {
+              "location": "features/test.rb:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 459663
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
